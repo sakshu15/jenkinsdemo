@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://wwww.thymeleaf.com">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo</title>
+    <link rel="stylesheet" th:href="@{css/home.css}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#x" style="text-decoration: none;">About Us</a></li>
+                <li>Menus</a></li>
+                <li>Location</li>
+                <li> <h1 style="margin-top: 2px; color: rgb(21, 85, 26); font-size: 50px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic;" >TeAmo Bistro</h1>
+                </li>
+                <li>Order online/Takeaway</li>
+                <li>Family Meal</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="img" >
+        <h1 style="font-size: 100px; color: aliceblue;"><i>TeAmo Bistro</i></h1>
+        <br><br><br><br><br><br><br>
+        <h2 style="font-size: 50px; color: aliceblue;">A<i> Delicious</i> journey of <i>Love</i></h2>
+    </div>
+    <center><h4 class="heading" style="align-items: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic; font-size: 34px; color: #193248;"><u>Some Glimpse of Our Ambience</u> </h4></center>
+    <div id="gallery" >
+        <div>
+            <img th:src="@{images/R (3).jpeg}" alt="" height="300px" width="300px">
+            <img th:src="@{images/OIP (3).jpeg}" alt="" height="300px" width="300px">
+            <img th:src="@{images/OIP (1).jpeg}" alt="" height="300px" width="300px">
+            <img th:src="@{images/OIP (2).jpeg}" alt="" height="300px" width="300px">
+        </div>
+        <div>
+            <img th:src="@{images/OIP (7).jpeg}" alt="" height="300px" width="300px">
+            <img th:src="@{images/OIP (4).jpeg}" alt="" height="300px" width="300px">
+            <img th:src="@{images/OIP (5).jpeg}" alt="" height="300px" width="300px">
+            <img th:src="@{images/fa1c9f5ec6a559ae849c6b9974c13e9f.jpg}" alt="" height="300px" width="300px">
+        </div>
+    </div>
+    <div id="x" data-wow-animation-name="fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <div class="row">
+            <div class="col-md-7" style="background: rgba(186, 150, 47, .7);padding: 20px; color: white;">
+                <h4 style="font-size: 34px; text-align: center">About TeAmo Bistro</h4>
+                <h5 style="font-size: 20px; text-align: center;">A Coffee Shop</h5>
+                <p class="p">TEAMO in Spanish stands for "I Love You".</p>
+                <p class="p">At TeAmo, Aurangabad's finest coffee shop, we have strived to create spaces and experiences that celebrate the 'mystical spirit of Love. Be it love for your spouse, for your family or your friends, TeAmo's exclusive offerings will ensure that you will be able to express the spirit of love to the ones who matter to you the most.</p>
+                <p class="p">With beautiful ambience along with experienced chefs and service personnel, TeAmo offers three distinct sections to suit "Love" of your choice.</p>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="menu">
+        <center><h2 class="heading" style="align-items: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic; font-size: 34px; color: #193248;"><u>Our Menu</u> </h4></center>
+        <center><img th:src="@{images/menu1.jpg}" alt="Not Available" height="700px" width="700px" margin-left="200px"></center>
+    </div>
+</body>
+</html>

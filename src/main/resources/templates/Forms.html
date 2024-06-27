@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background-image: url(images.jpeg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .ex{
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body style="background-color:hwb(201 52% 16%) ;">
+    <h2 style="font-size:40px; background-color: hsl(208, 43%, 78%);"> <center> ADMISSION FORM </center> </h2>
+    <div class="ex">
+    <form style="font-size:xx-large ;">
+        <div>
+         Student's Name :   <input type="text" name="myName" id="name" size="100" required><br>
+         Father's Name &nbsp; :   <input type="text" name="myName" id="name" size="100" required><br>
+         Mother's Name :   <input type="text" name="myName" id="name" size="100" required><br>
+        </div>
+        <div>
+         Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:   <input type="email" name="myEmail" id="email" size="100" required>
+        </div>
+        <div>
+         Date of Birth &nbsp;&nbsp;&nbsp;&nbsp;:   <input type="date" name="myDate" id="date" style="font-size:20px ;" required>
+        </div>
+        <!-- only number can write -->
+        <div>
+         Mobile Number :    <input type="number" name="myNumber" id="number" size="30px" required>
+        </div>
+        <!-- checkbox used for to select yes or no -->
+        <label for="eligibility">Are you 18+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label> <input type="checkbox" name="myEligibility" id="eligibility" size="100">
+        <br>
+        <!-- radio used for choose any one option -->
+        <label for="gender">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  </label> &nbsp;&nbsp;Male <input type="radio" name="myGender" id="gender"> &nbsp;&nbsp;Female<input type="radio" name="myGender" id="gender">
+        <br>
+        <label for="gender">Marital Status &nbsp;&nbsp;:  </label> &nbsp;&nbsp;Married <input type="radio" name="myStatus" id="status"> &nbsp;&nbsp;Unmarried<input type="radio" name="myStatus" id="status">
+        <div >
+            City : <select name="mySelect" id="select" style="font-size: 25px;">
+                <option value="" aria-setsize="50" >--select city--</option>
+                <option value="pune" aria-setsize="50">Pune</option>
+                <option value="aurangabad" aria-setsize="50">Aurangabad</option>
+            </select>
+        </div>
+        <!-- text area -->
+        <label for="text">Permenant Address :</label>
+        <div>
+            <textarea name="myText" id="text" cols="80" rows="5"></textarea>
+        </div>
+        <p>Marks Obtained in Qualifying Examination :</p>
+        <table border="3" >
+            <tr>
+                <td>       </td> <td>&nbsp; Name of University</td> <td>&nbsp; Percentage</td> <td>&nbsp; Total Marks</td>
+            </tr>
+            <tr>
+                <td>SSC &nbsp;</td> <td><input type="text" size="40px"></td> <td><input type="number" name="" id=""></td> <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>HSC&nbsp;</td> <td><input type="text" size="40px"></td> <td><input type="number" name="" id=""></td> <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>JEE/CET&nbsp;</td> <td><input type="text" size="40px"></td> <td><input type="number" name="" id=""></td> <td><input type="number"></td>
+            </tr>
+        </table>
+        <br>
+    </div>
+        <!-- submit and reset buttons -->
+        <center>
+        <input type="submit" value="Submit Now" style="background-color:#a1d2ef; font-size: 30px; font-style: unset;"> 
+        &nbsp;&nbsp;&nbsp;<input type="reset" value="Reset Now" style="background-color:#a1d2ef; font-size: 30px; font-style:unset;">
+        </center>
+        <br>
+    </form>
+</body>
+</html>
